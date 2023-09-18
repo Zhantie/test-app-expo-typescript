@@ -15,6 +15,8 @@ import { Ionicons } from "@expo/vector-icons";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 
+/* The `interface Category` is defining the structure of an object that represents a category. It has
+three properties: `name`, `count`, and `checked`. */
 interface Category {
   name: string;
   count: number;
@@ -22,6 +24,9 @@ interface Category {
 }
 
 
+/* The `ItemBox` component is a functional component that renders a group of `TouchableOpacity`
+components with icons and text. It is used as the `ListHeaderComponent` in the `FlatList` component
+in the `Filter` component. */
 const ItemBox = () => (
   <>
     <View style={styles.itemContainer}>
@@ -53,6 +58,8 @@ const ItemBox = () => (
   </>
 );
 
+/* The `Filter` component is a functional component in TypeScript React. It is responsible for
+rendering a filter screen with a list of categories and options for filtering. */
 const Filter = () => {
   const navigation = useNavigation();
   const [items, setItems] = useState<Category[]>(categories);
@@ -73,6 +80,9 @@ const Filter = () => {
     setSelected(selectedItems);
   }, [items]);
 
+  /* The `useAnimatedStyle` hook is used in React Native Reanimated library to create animated styles.
+  In this code snippet, `animatedStyles` and `animatedText` are two animated styles that are created
+  using the `useAnimatedStyle` hook. */
   const animatedStyles = useAnimatedStyle(() => {
     return {
       width: flexWidth.value,
@@ -86,6 +96,10 @@ const Filter = () => {
     };
   });
 
+  /**
+  The handleClearAll function updates the checked property of all items in the items array to false
+  and sets the updated array as the new value of the items state.
+   */
   const handleClearAll = () => {
     const updatedItems = items.map((item) => {
       item.checked = false;
@@ -152,6 +166,9 @@ const Filter = () => {
   );
 };
 
+/* The `const styles` object is a collection of CSS styles defined using the `StyleSheet.create` method
+from the `react-native` library. Each key-value pair in the object represents a specific style rule
+for a component in the `Filter` component. */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
