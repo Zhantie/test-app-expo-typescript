@@ -52,7 +52,7 @@ De `BottomSheet.tsx`-component in de `/components`-map verzorgt de weergave van 
 
 ```typescript
 // BottomSheet.tsx
-
+                    Dit is een test codesnippet moet nog aangepast worden
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
