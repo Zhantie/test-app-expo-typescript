@@ -1,10 +1,10 @@
 # FastfoodApp met Expo
 
-Dit ReadMe-bestand biedt een overzicht van de structuur van de code en bevat uitleg over de belangrijkste code snippets die zijn gebruikt bij het ontwikkelen van de FastfoodApp met Expo.
+Deze app functioneert als een food delivery platform vergelijkbaar met Deliveroo. Gebruikers kunnen door de kaart bladeren, producten aan een lijst toevoegen en verwijderen, enzovoort.
 
 ## Doel
 
-Het hoofddoel van dit project is om een food delivery app te ontwikkelen met behulp van Expo, waarbij verschillende functionaliteiten zoals modals, componenten, en assets worden geïntegreerd. 
+Na het uitvoeren van literatuuronderzoek wilde ik mijn kennis in development verdiepen om een beter inzicht te krijgen in de werkwijze binnen technieken bij Freshheads. Deze app diende als een leerproject om vertrouwd te raken met de ontwikkelingstool Expo en de programmeertaal TypeScript. Het ontwikkelen van een functionele food delivery app bood een praktische context om verschillende aspecten van app-ontwikkeling te verkennen.
 
 ## Folderstructuur
 
