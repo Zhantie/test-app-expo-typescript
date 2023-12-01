@@ -1,7 +1,3 @@
-Zeker, hier is de ReadMe in Markdown-formaat:
-
----
-
 # FastfoodApp met Expo
 
 Dit ReadMe-bestand biedt een overzicht van de structuur van de code en bevat uitleg over de belangrijkste code snippets die zijn gebruikt bij het ontwikkelen van de FastfoodApp met Expo.
