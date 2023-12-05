@@ -48,7 +48,7 @@ fastfoodApp/
 
 ### Voorbeeld 1: BottomSheet Component
 
-De `BottomSheet.tsx`-component in de `/components`-map verzorgt de weergave van het bottom sheet element in de app. Hier is een voorbeeld van de implementatie:
+De `Restaurants.tsx`-component in de `/components`-map verzorgt de weergave voor beschikbare restaurants in de app. Hier is een voorbeeld van de de restaurant geimplementeerd heb:
 
 ```typescript
 // Restaurants.tsx
@@ -74,7 +74,7 @@ const Restaurants = () => {
         padding: 15,
       }}
     >
-      {restaurants.map((restaurant, index) => (
+      {restaurants.map((restaurant, index) => (      //haal de restaurants op in een Json data bestand. 
         <Link href={"/"} key={index} asChild>
           <TouchableOpacity>
             <View style={styles.categoryCard}>
@@ -96,7 +96,32 @@ const Restaurants = () => {
 export default BottomSheet;
 ```
 
-*Voeg soortgelijke uitleg toe voor andere belangrijke code snippets die je wilt benadrukken.*
+Om styles toe te voegen kun je doormiddel van het importeren van ```StyleSheet``` van react native. Hier een voorbeeld hoe de ```StyleSheet``` eruit ziet.
+
+```typescript
+const styles = StyleSheet.create({
+  categoryCard: {
+    width: 300,
+    height: 250,
+    backgroundColor: "white",
+    marginEnd: 16,
+    elevation: 2,
+    shadowColor: "black",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    borderRadius: 4,
+  },
+  categoryText: {
+    paddingVertical: 5,
+    fontSize: 15,
+    fontWeight: "bold",
+  },
+  // rest van de styleSheet
+});
+```
 
 ## Hoe te gebruiken met Expo
 
