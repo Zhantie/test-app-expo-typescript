@@ -44,9 +44,9 @@ fastfoodApp/
 └── tsconfig.json
 ```
 
-## Code Snippets
+## Code Snippets component
 
-### Voorbeeld 1: BottomSheet Component
+### Restaurants Component
 
 De `Restaurants.tsx`-component in de `/components`-map verzorgt de weergave voor beschikbare restaurants in de app. Hier is een voorbeeld van de de restaurant geimplementeerd heb:
 
