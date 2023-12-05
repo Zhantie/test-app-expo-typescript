@@ -51,25 +51,47 @@ fastfoodApp/
 De `BottomSheet.tsx`-component in de `/components`-map verzorgt de weergave van het bottom sheet element in de app. Hier is een voorbeeld van de implementatie:
 
 ```typescript
-// BottomSheet.tsx
-                    Dit is een test codesnippet moet nog aangepast worden
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+// Restaurants.tsx
+import {
+  View,
+  Text,
+  ScrollView,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+} from "react-native";
+import React from "react";
+import { restaurants } from "@/assets/data/home";
+import { Link } from "expo-router";
+import Colors from "@/constants/Colors";
 
-const BottomSheet = () => {
-  // Implementatie van het bottom sheet element
+const Restaurants = () => {
   return (
-    <View style={styles.bottomSheet}>
-      {/* Inhoud van het bottom sheet */}
-    </View>
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      contentContainerStyle={{
+        padding: 15,
+      }}
+    >
+      {restaurants.map((restaurant, index) => (
+        <Link href={"/"} key={index} asChild>
+          <TouchableOpacity>
+            <View style={styles.categoryCard}>
+              <Image style={styles.image} source={restaurant.img} />
+              <View style={styles.categoryBox}>
+                <Text style={styles.categoryText}>{restaurant.name}</Text>
+                <Text style={{color: Colors.green}}>{restaurant.rating} {restaurant.ratings}</Text>
+                <Text style={{color: Colors.medium}}>{restaurant.distance}</Text>
+                
+              </View>
+            </View>
+          </TouchableOpacity>
+        </Link>
+      ))}
+    </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  bottomSheet: {
-    // Stijlen voor het bottom sheet element
-  },
-});
 
 export default BottomSheet;
 ```
