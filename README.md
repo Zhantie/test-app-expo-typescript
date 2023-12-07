@@ -79,7 +79,9 @@ In de `_layout.tsx` kun je de opmaak bepalen door gebruik te maken van `Stack.Sc
 
 Je kunt de eigenschappen van de `Stack.Screen` aanpassen. Dit geldt overigens niet alleen voor de `Stack.Screen`, maar ook als je bijvoorbeeld een modal toevoegt.
 
-//filmpje 
+https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/dc9a24c2-4f20-476b-9150-faa5266bf641
+
+pje 
 
 ## Code Snippets component
 
