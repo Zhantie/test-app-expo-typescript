@@ -81,7 +81,6 @@ Je kunt de eigenschappen van de `Stack.Screen` aanpassen. Dit geldt overigens ni
 
 https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/dc9a24c2-4f20-476b-9150-faa5266bf641
 
-pje 
 
 ## Code Snippets component
 
@@ -161,6 +160,8 @@ const styles = StyleSheet.create({
   // rest van de styleSheet
 });
 ```
+
+https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/66e1eb0e-68ce-42f7-8f1a-7b42db54e3ea
 
 ## Hoe te gebruiken met Expo
 
