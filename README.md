@@ -162,8 +162,13 @@ const styles = StyleSheet.create({
 
 https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/d92978e9-c765-4b10-8228-291b0791a33b
 
-## Hoe te gebruiken met Expo
+### Oproepen API
+In Expo weet ik nu hoe ik API kan oproepen. In dit voorbeeld heb ik te maken gehad met een kaart. De kaart is gemakkelijk verkrijgbaar vanuit Google zelf. Google heeft verschillende data die je kunt ophalen, waardoor je de geselecteerde data vanuit één token gegenereerd kunt krijgen. Vanuit Google heb ik de `Geocoding API` en `Places API` gebruikt voor deze POC. Voor nu heb ik de API token eruit gehaald. De kaart werk nog wel alleen het vinden van locaties niet. De reden hiervoor is als ik mijn GitHub openbaar zou maken zou mijn API token zichtbaar zijn voor iedereen.
 
+## Google places API & Geocoding API
+Hier word gekeken wanneer een gebruikers zoekt naar een locatie, Zodra een locatie gevonden is en daarop wordt, wordt de locatie weergeven door de `latitude` en `longitude` die opgehaald worden van uit de `Geocoding API`. 
+
+## Hoe te gebruiken met Expo
 1. **Clonen van het project**: Clone dit repository naar je lokale machine.
 2. **Installatie van Expo CLI**: Indien je nog geen Expo CLI geïnstalleerd hebt, voer dan `npm install -g expo-cli` uit om Expo CLI te installeren.
 3. **Installatie van dependencies**: Voer `npm install` uit in de hoofdmap van het project om alle benodigde afhankelijkheden te installeren.
