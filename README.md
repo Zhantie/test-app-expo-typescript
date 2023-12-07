@@ -43,6 +43,25 @@ fastfoodApp/
 ├── package.json
 └── tsconfig.json
 ```
+## Expo routing
+Met behulp van `expo routing` wordt file-based routing toegepast, wat het mogelijk maakt om een duidelijke en eenvoudige navigatie voor een platform te ontwikkelen. Zoals te zien is binnen de `app`-map, zie je deze lay-out:
+
+```
+├── app/
+│   ├── modal/
+│   │   ├── filter.tsx
+│   │   ├── location-search.tsx
+│   ├── _layout.tsx
+│   └── index.tsx
+```
+
+In de `_layout.tsx` kun je de opmaak bepalen door gebruik te maken van `Stack.Screen` om schermen te stapelen. Op deze manier krijgt het scherm ook de native functionaliteiten. Bijvoorbeeld, IOS zorgt automatisch voor micro-animaties en zowel Android als IOS krijgen de app-beleving die je verwacht. Hier is een voorbeeld van hoe je dit kunt implementeren:
+
+```typescript
+//stack screen
+```
+
+Je kunt de eigenschappen van de `Stack.Screen` aanpassen. Dit geldt overigens niet alleen voor de `Stack.Screen`, maar ook als je bijvoorbeeld een modal toevoegt.
 
 ## Code Snippets component
 
