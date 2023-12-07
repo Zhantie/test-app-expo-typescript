@@ -55,13 +55,31 @@ Met behulp van `expo routing` wordt file-based routing toegepast, wat het mogeli
 │   └── index.tsx
 ```
 
-In de `_layout.tsx` kun je de opmaak bepalen door gebruik te maken van `Stack.Screen` om schermen te stapelen. Op deze manier krijgt het scherm ook de native functionaliteiten. Bijvoorbeeld, IOS zorgt automatisch voor micro-animaties en zowel Android als IOS krijgen de app-beleving die je verwacht. Hier is een voorbeeld van hoe je dit kunt implementeren:
+In de `_layout.tsx` kun je de opmaak bepalen door gebruik te maken van `Stack.Screen` om schermen te stapelen. Op deze manier krijgt het scherm ook de native functionaliteiten. Bijvoorbeeld, IOS zorgt automatisch voor micro-animaties en zowel Android als IOS krijgen de app-beleving die je verwacht. Je kunt aan deze `Stack.Screen` een `Presentation` eigenschap mee geven. Door hier bijvoorbeeld `Modal` te plaatsen, krijg je in plaats van een gestapelde scherm een annematie te zien dat deze pagina over de huidige pagina komt. Een `Modal` komt veel voor bij IOS maar niet veel bij Android. Hier is een voorbeeld van hoe je dit kunt implementeren:
 
 ```typescript
-//stack screen
+//voorbeeld filter modal
+<Stack.Screen name="(modal)/filter"
+        options={{
+          presentation: 'modal',
+          headerTitle: 'Filter',
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: Colors.lightgrey,
+          },
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => {navigationRef.goBack()}}>
+              <Ionicons name='close-outline' size={30} color={Colors.primary} />
+            </TouchableOpacity>
+            
+          ),
+        }}
+        />
 ```
 
 Je kunt de eigenschappen van de `Stack.Screen` aanpassen. Dit geldt overigens niet alleen voor de `Stack.Screen`, maar ook als je bijvoorbeeld een modal toevoegt.
+
+//filmpje 
 
 ## Code Snippets component
 
