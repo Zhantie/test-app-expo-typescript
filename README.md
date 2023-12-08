@@ -182,8 +182,7 @@ onPress={(data, details = null) => {
         }}
 ```
 
-![25AFD779-0FAE-4D5F-98C0-9753566F593D_1_201_a](https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/0e1ef85e-cf60-4012-9140-f45c6a4fa984)
-
+https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/3145c75e-d35f-4072-bf7c-33ad897912cd
 
 ## Hoe te gebruiken met Expo
 1. **Clonen van het project**: Clone dit repository naar je lokale machine.
