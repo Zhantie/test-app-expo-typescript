@@ -133,7 +133,8 @@ const Restaurants = () => {
 export default BottomSheet;
 ```
 
-Om styles toe te voegen kun je doormiddel van het importeren van ```StyleSheet``` van react native. Hier een voorbeeld hoe de ```StyleSheet``` eruit ziet.
+Om styles toe te voegen kun je doormiddel van het importeren van ```StyleSheet``` van react native. Hier een voorbeeld hoe de ```StyleSheet``` eruit kan zien.
+De reden voor deze `StyleSheet` is om ervoor te zorgen dat all styles die je mee geeft op een gezamelijke plaats terecht komen om de overzicht en de overdraagbaarheid van je code te behouden.
 
 ```typescript
 const styles = StyleSheet.create({
@@ -159,7 +160,6 @@ const styles = StyleSheet.create({
   // rest van de styleSheet
 });
 ```
-
 https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/d92978e9-c765-4b10-8228-291b0791a33b
 
 ## Oproepen API
