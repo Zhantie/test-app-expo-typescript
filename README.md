@@ -167,7 +167,7 @@ In Expo weet ik nu hoe ik API kan oproepen. In dit voorbeeld heb ik te maken geh
 
 ![Places API](https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/49b62c9e-9960-4431-aa84-ca2a5b75bebb)
 
-### Google places API & Geocoding API
+## Google places API & Geocoding API
 Door middel van de package `react-native-google-places-autocomplete` word gekeken wanneer een gebruikers zoekt naar een locatie, en zijn of haar locatie gevoonden is, wordt de locatie weergeven door de `latitude` en `longitude` die opgehaald worden vanuit de `Geocoding API` 
 ```
 // ophalen locatie lat & long van de gebruiker
