@@ -167,7 +167,8 @@ In Expo weet ik nu hoe ik API kan oproepen. In dit voorbeeld heb ik te maken geh
 ![Places API](https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/49b62c9e-9960-4431-aa84-ca2a5b75bebb)
 
 ### Google places API & Geocoding API
-Hier word gekeken wanneer een gebruikers zoekt naar een locatie, Zodra een locatie gevonden is en daarop wordt, wordt de locatie weergeven door de `latitude` en `longitude` die opgehaald worden van uit de `Geocoding API`. 
+Hier word gekeken wanneer een gebruikers zoekt naar een locatie, Zodra een locatie gevonden is en daarop wordt, wordt de locatie weergeven door de `latitude` en `longitude` die opgehaald worden van uit de `Geocoding API`.
+![25AFD779-0FAE-4D5F-98C0-9753566F593D_1_201_a](https://github.com/Zhantie/test-app-expo-typescript/assets/74553048/0e1ef85e-cf60-4012-9140-f45c6a4fa984)
 
 ## Hoe te gebruiken met Expo
 1. **Clonen van het project**: Clone dit repository naar je lokale machine.
